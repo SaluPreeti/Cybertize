@@ -1,6 +1,6 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import { Container } from 'react-bootstrap';
+import {  Card } from 'react-bootstrap';
 import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js';
 
 Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title);
@@ -38,12 +38,18 @@ const LineChart = () => {
   };
 
   return (
-    <Container>
-      <h2>Responsive Line Chart Example</h2>
-      <div style={{ width: '100%', height: '300px' }}>
+    <Card>
+    <Card.Body>
+      <Card.Title className="mr-auto">Viewership Installs & Signups Graph</Card.Title>
+      <div style={{ width: '100%', height: '200px' }}>
+        <div>
         <Line data={data} options={options} />
+        
+        </div>
       </div>
-    </Container>
+    </Card.Body>
+  </Card>
+  
   );
 };
 

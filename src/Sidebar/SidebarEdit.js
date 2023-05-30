@@ -9,10 +9,10 @@ const SidebarEdit = () => {
     return (
         <>
             {/* <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">open</button> */}
-            <div className='button-class d-flex'>
+            {/* <div className='button-class d-flex'>
                     <button type="button" className="btn-open" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"  />
-                </div>
-            <div className="offcanvas offcanvas-start"
+            </div> */}
+            <div className="offcanvas offcanvas-start show"
                 data-bs-scroll="true"
                 data-bs-backdrop="false"
                 tabIndex={-1} id="offcanvasScrolling"
